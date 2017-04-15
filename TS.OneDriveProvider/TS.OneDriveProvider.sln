@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TS.OneDriveProvider", "OneDriveProvider\TS.OneDriveProvider.csproj", "{6266D951-0D46-4BE0-BDC5-488CAAE3F458}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TS.OneDriveProvider.Tests", "TS.OneDriveProvider.Tests\TS.OneDriveProvider.Tests.csproj", "{B32AD196-CB69-4EBC-A508-498E37392FD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6266D951-0D46-4BE0-BDC5-488CAAE3F458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6266D951-0D46-4BE0-BDC5-488CAAE3F458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6266D951-0D46-4BE0-BDC5-488CAAE3F458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6266D951-0D46-4BE0-BDC5-488CAAE3F458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B32AD196-CB69-4EBC-A508-498E37392FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B32AD196-CB69-4EBC-A508-498E37392FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B32AD196-CB69-4EBC-A508-498E37392FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B32AD196-CB69-4EBC-A508-498E37392FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
