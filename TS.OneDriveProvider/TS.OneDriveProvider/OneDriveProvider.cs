@@ -42,9 +42,6 @@ namespace TrailheadSystems.OneDriveProvider
 							{
 								var token = await GetTokenForUserAsync();
 								requestMessage.Headers.Authorization = new AuthenticationHeaderValue("bearer", token);
-								// This header has been added to identify our sample in the Microsoft Graph service.  If extracting this code for your project please remove.
-								//requestMessage.Headers.Add("SampleID", "uwp-csharp-snippets-sample");
-
 							});
 			oneDriveClient = new OneDriveClient("https://graph.microsoft.com/v1.0", authProvider);
 
@@ -65,23 +62,13 @@ namespace TrailheadSystems.OneDriveProvider
 				var scopes = new string[]
 						{
 						"https://graph.microsoft.com/User.Read",
-						"https://graph.microsoft.com/User.ReadWrite",
-						"https://graph.microsoft.com/User.ReadBasic.All",
-						"https://graph.microsoft.com/Mail.Send",
-						"https://graph.microsoft.com/Calendars.ReadWrite",
-						"https://graph.microsoft.com/Mail.ReadWrite",
-						"https://graph.microsoft.com/Files.ReadWrite",
-
-                        // Admin-only scopes. Uncomment these if you're running the sample with an admin work account.
-                        // You won't be able to sign in with a non-admin work account if you request these scopes.
-                        // These scopes will be ignored if you leave them uncommented and run the sample with a consumer account.
-                        // See the MainPage.xaml.cs file for all of the operations that won't work if you're not running the 
-                        // sample with an admin work account.
-                        //"https://graph.microsoft.com/Directory.AccessAsUser.All",
-                        //"https://graph.microsoft.com/User.ReadWrite.All",
-                        //"https://graph.microsoft.com/Group.ReadWrite.All"
-
-
+						"https://graph.microsoft.com/Files.Read",
+						"https://graph.microsoft.com/Files.Read.All",
+						//development just doing read access at this time
+						//"https://graph.microsoft.com/Files.Read.Selected",
+						//"https://graph.microsoft.com/Files.ReadWrite",
+						//"https://graph.microsoft.com/Files.ReadWrite.All",
+						//"https://graph.microsoft.com/Files.ReadWrite.Selected",
                     };
 
 				IdentityClientApp = new PublicClientApplication(clientId);
